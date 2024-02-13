@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AnimeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,7 +13,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/',[AnimeController::class,'home'])->name('genres');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/genere/{genre_id}',[AnimeController::class,'byGenre'])->name('anime.genre');
+
+Route::get('/anime/{id}',[AnimeController::class,'anime'])->name('anime.byId');
