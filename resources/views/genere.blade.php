@@ -1,10 +1,10 @@
 <x-main-layout>
-
+    <x-NavbarMain/>
     <div class="container">
         <div class="row">
 
             <h1 style="color: rgb(228, 228, 228)">Anime di genere:</h1>
-                @foreach ($anime as $anime)
+                @foreach($anime as $anime)
                 <div class="col-4">
                     <div class="card" style="width: 20rem;">
                         <img src="{{$anime['images']['jpg']['image_url']}}" class="card-img-top" alt="...">

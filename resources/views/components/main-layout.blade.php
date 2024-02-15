@@ -17,6 +17,8 @@
 
     </style>
 </head>
+
+
 <body style="background-color: black">
 
     {{$slot}}

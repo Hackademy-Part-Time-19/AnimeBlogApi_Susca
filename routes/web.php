@@ -18,3 +18,4 @@ Route::get('/',[AnimeController::class,'home'])->name('genres');
 Route::get('/genere/{genre_id}',[AnimeController::class,'byGenre'])->name('anime.genre');
 
 Route::get('/anime/{id}',[AnimeController::class,'anime'])->name('anime.byId');
+
